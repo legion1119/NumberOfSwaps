@@ -11,11 +11,15 @@ public class NumberOfSwaps
     public static void main(String[] args) 
     {
     	Scanner input = new Scanner(System.in);
-        int n = input.nextInt();
-        int[] a = new int[n];
+        int n = 0;
         int numberOfSwaps = 0;
 
+        System.out.print("Enter the amount of integers to be sorted: ");
+        n = input.nextInt();
+        int[] a = new int[n];
         
+        System.out.println("Now enter the integers to be sorted seperated by a /n"
+        		+ "space or a new line: ");
         for(int index = 0; index < n; index ++)
         {
             a[index] = input.nextInt();
